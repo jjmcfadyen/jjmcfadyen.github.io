@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jessica McFadyen</title>
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+<script>
+
+function darkMode() {
+  /* Toggle colour scheme */
+  document.body.classList.toggle("dark-mode");
+  document.getElementById("banner-buttons").classList.toggle("dark-mode");
+  /* Change button text */
+  if (document.body.classList.contains("dark-mode")) {
+    document.getElementById("dark-mode-text").innerHTML = 'dark';
+  } else {
+    document.getElementById("dark-mode-text").innerHTML = 'light';
+  }
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="banner">
+  <div id="banner-title"><p>Jessica McFadyen</p></div>
+  <div id="banner-buttons">
+    <p class="banner-button"><a href="#Home">Home</a></p>
+    <p class="banner-button">About</p>
+    <p class="banner-button">CV</p>
+    <p class="banner-button">Contact</p>
+    <div id="dark-mode">
+      <label class="switch">
+        <input type="checkbox" onclick="darkMode(this)">
+        <span class="slider"></span>
+      </label>
+      <p id="dark-mode-text">Light</p>
+    </div>
+  </div>
+</div>
+
+<section id="main-outer">
+  <a name="Home"></a>
+  <div id="main-inner">
+    <div>
+      <h1>Cognitive neuroscientist</h1>
+      <h2>Research Fellow at University College London</h2>
+    </div>
+    <div></div>
+  </div>
+</section>
+
+<section id="about">
+  <div id="about-inner">
+    <h1>About</h1>
+  </div>
+</section>
+
+</body>
+
+</html>
