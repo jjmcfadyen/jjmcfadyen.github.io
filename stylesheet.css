@@ -503,7 +503,7 @@ footer {
   margin-bottom: 1em;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 500px) {
 
   #banner {
     width: 90%;
