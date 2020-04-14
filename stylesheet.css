@@ -53,6 +53,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 100;
 }
 
 #banner {
@@ -62,6 +63,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-self: center;
+}
+
+#banner a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s;
+}
+
+#banner a:hover {
+  color: #FF0068;
 }
 
 #banner-title {
@@ -77,16 +88,6 @@ body {
   align-items: center;
   justify-content: space-evenly;
   padding-right: 2em;
-}
-
-#banner-buttons a {
-  text-decoration: none;
-  color: inherit;
-  transition: color 0.2s;
-}
-
-#banner-buttons a:hover {
-  color: #FF0068;
 }
 
 .banner-button {
@@ -337,7 +338,7 @@ section {
   font-size: 0.9em;
 }
 
-#Publications h2 {
+#Publications h2, #Software h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.4em;
 }
@@ -385,6 +386,108 @@ section {
 
 #Publications a:hover {
   color: #FF9E00;
+}
+
+.download-cv {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  color: initial;
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  padding: 0.5em;
+  border-radius: 0.8em;
+  background: white;
+  color: black;
+  align-self: center;
+  margin: 3em 0 3em 0;
+  box-shadow: 0.25em 0.25em 0.65em rgba(0,0,0,.3);
+  border: 0.1em solid transparent;
+  transition: border 0.4s, background 0.4s, color 0.4s;
+}
+.download-cv:hover {
+  border-color: #FF0068;
+  background-color: #FFE8F1;
+  color: #FF0068;
+}
+
+#experiment-code-table {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: middle;
+  margin-bottom: 5em;
+}
+
+#experiment-code-table h3 {
+  font-size: 1.1em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+#experiment-code-table .img-container {
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#experiment-code-table img {
+  width: auto;
+  height: 100%;
+  box-shadow: 0.25em 0.25em 0.65em rgba(0,0,0,.3);
+  align-self: center;
+}
+
+.experiment-code-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 0 0.5em 0 0.5em;
+}
+
+.github-repo, .play-button, .paper-button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  border-radius: 0.8em;
+  padding: 0.4em;
+  border: 0px;
+  font-size: 0.9em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  align-self: flex-start;
+  transition: color 0.4s, background 0.4s;
+}
+.github-repo {
+  background: #3F3F3F;
+  color: white;
+  border: 0.1em solid #3F3F3F;
+}
+.github-repo:hover {
+  color: #3F3F3F;
+  background: white;
+}
+.play-button {
+  background: #8AFFC5;
+  color: black;
+  border: 0.1em solid #8AFFC5;
+}
+.play-button:hover {
+  background: black;
+  color:#8AFFC5;
+}
+.paper-button {
+  background: #78F7FF;
+  color: black;
+  border: 0.1em solid #78F7FF;
+}
+.paper-button:hover {
+  background: black;
+  color: #78F7FF;
 }
 
 footer {

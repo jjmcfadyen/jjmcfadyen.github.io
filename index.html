@@ -60,7 +60,7 @@ function darkMode() {
 
 <div id="banner-outer" class="light-mode">
   <div id="banner">
-    <div id="banner-title"><p>Jessica McFadyen</p></div>
+    <div id="banner-title"><p><a href="#main-outer">Jessica McFadyen</a></p></div>
     <div id="banner-buttons">
       <p class="banner-button"><a href="#main-outer">Home</a></p>
       <p class="banner-button"><a href="#About">About</a></p>
@@ -172,6 +172,13 @@ function darkMode() {
           <th><a href="https://doi.org/10.3389/fpsyg.2019.00021">Read here</a></th>
         </tr>
         <tr>
+          <th><strong>McFadyen, J.</strong></th>
+          <th>2019</th>
+          <th>Investigating the Subcortical Route to the Amygdala Across Species and in Disordered Fear Responses</th>
+          <th>Journal of Experimental Neuroscience</th>
+          <th><a href="https://doi.org/10.1177/1179069519846445">Read here</a></th>
+        </tr>
+        <tr>
           <th><strong>McFadyen, J.</strong>, Mattingley, J. B., & Garrido, M. I.</th>
           <th>2019</th>
           <th>An afferent white matter pathway from the pulvinar to the amygdala facilitates fear recognition</th>
@@ -258,17 +265,58 @@ function darkMode() {
     <h1>Software</h1>
     <hr style="width: 7em;">
 
-    <p style="text-align:center; margin-bottom: 5em;">Coming soon...</p>
+    <h2>Experiments</h2>
+    <div id="experiment-code-table">
+      <div class="experiment-code-col">
+        <h3>Risk-Taking Game</h3>
+        <div class="img-container">
+          <img src="risk-experiment-img1.png" alt="Screenshot from risky decision making experiment">
+        </div>
+        <p>This repository contains the code used to run and analyse an experiment, currently in progress. In this experiment, participants memorised different sequences of images, each with their own point value. Participants then play a game where they must choose between a risky and safe option, aiming to maximise the number of points gained each time.</p>
+        <div>
+          <a href="https://github.com/jjmcfadyen/risky-replay" target="_blank" class="github-repo">GitHub Repository</a>
+          <a href="https://risky-decision-2019.firebaseapp.com/" target="_blank" class="play-button">Play Game</a>
+        </div>
+      </div>
+      <div class="experiment-code-col">
+        <h3>Conscious Perception Experiment</h3>
+        <div class="img-container">
+          <img src="bcfs-experiment-img1.png" alt="Experiment set-up for continuous flash suppression">
+        </div>
+        <p>This repository contains the code used to run and analyse an experiment, currently written up as a preprint. In this experiment, participants we used continuous flash suppression (a mirror technique that makes stimuli invisible) to see whether surprising neutral or surprising fearful faces broke into conscious perception faster.</p>
+        <div>
+          <a href="https://github.com/jjmcfadyen/surprising-threat-bcfs-eeg" target="_blank" class="github-repo">GitHub Repository</a>
+          <a href="https://doi.org/10.1101/525519" target="_blank" class="paper-button">Read Paper</a>
+        </div>
+      </div>
+      <div class="experiment-code-col">
+        <h3>Tractography Experiment</h3>
+        <div class="img-container">
+          <img src="diffusion-experiment-img1.png" alt="White matter tracts connecting the superior colliculus, pulvinar, and amygdala">
+        </div>
+        <p>This repository contains the code used to analyse data from the <a href="http://www.humanconnectomeproject.org/" target="_blank">Human Connectome Project</a>, the results of which were published in <i>eLife</i> in 2019. We reconstructed white matter tracts from the brainstem to the thalamus, and from the thalamus to the amygdala. We found that people with stronger fibre density along these tracts were better at recognising fearful faces and had stronger forward-flowing neural activity.</p>
+        <div>
+          <a href="https://github.com/jjmcfadyen/hcp-diffusion-dcm" target="_blank" class="github-repo">GitHub Repository</a>
+          <a href="https://doi.org/10.7554/eLife.40766" target="_blank" class="paper-button">Read Paper</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- <h2>Apps</h2>
+    <p style="text-align:left; margin-bottom: 5em;">Coming soon...</p>
+
+    <h2>Games</h2>
+    <p style="text-align:left; margin-bottom: 5em;">Coming soon...</p> -->
 
   </div>
 </section>
 
 <section id="CV" class="light-mode-alt">
-  <div class="inner-container">
+  <div class="inner-container" style="display:flex; flex-direction:column; justify-content:center;">
     <h1>CV</h1>
     <hr style="width: 7em;">
 
-    <p style="text-align:center; margin-bottom: 5em;">Coming soon...</p>
+    <a href="McFadyen_CV_v2.pdf" class="download-cv" download target="_blank">Click to download CV as PDF</a>
 
   </div>
 </section>
