@@ -1,5 +1,9 @@
 html {
   scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 body {
@@ -503,13 +507,16 @@ footer {
   margin-bottom: 1em;
 }
 
-@media only screen and (min-width: 500px) {
+@media screen and (max-width: 900px) {
 
+  #banner-outer {
+    width: 100vw;
+  }
   #banner {
     width: 90%;
   }
   #banner-title {
-    font-size: 3.5em;
+    font-size: 2em;
   }
   .banner-button {
     display: none;
@@ -519,11 +526,12 @@ footer {
   }
   #nav-button-container{
     display: flex;
-    font-size: 2.5em;
+    font-size: 1.3em;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     float: left;
     overflow: hidden;
+    width: 50vw;
   }
   .dropdown-button {
     font-size: 1em;
@@ -542,12 +550,12 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  #nav-button-menu:focus {
+  #nav-button-text:focus {
     outline: 0;
   }
   .dropdown {
     position: absolute;
-    top: 3em;
+    top: 5em;
     right: 1.5em;
     border-radius: 0.4em;
     background: rgba(255,255,255,.85);
@@ -565,31 +573,6 @@ footer {
   #main-inner {
     width: 90%;
   }
-  #main-inner h1 {
-    font-size: 3em;
-  }
-  #main-inner h2 {
-    font-size: 2em;
-  }
-  #main-inner h3 {
-    font-size: 1.85em;
-  }
-  #main-inner p {
-    font-size: 1.5em;
-  }
-  .fa {
-    font-size: 3em !important;
-  }
-  .ai-2x {
-    font-size: 3em !important;
-  }
-
-  .content h1 {
-    font-size: 3em;
-  }
-  .content p {
-    font-size: 1.5em;
-  }
 
   #About div {
     padding-left: 10%;
@@ -601,13 +584,16 @@ footer {
   }
 
   #Publications .table-header {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 
   #Publications th {
-    font-size: 1.4em;
+    font-size: 0.6em;
   }
 
+}
+
+@media screen and (max-width: 1279px) {
   #experiment-code-table {
     flex-direction: column;
   }
@@ -619,27 +605,7 @@ footer {
     width: 100%;
     height: auto;
   }
-  #experiment-code-table p {
-    font-size: 0.9em;
-  }
   #experiment-code-table h3 {
     margin-top: 2.5em;
-    font-size: 1.8em;
   }
-  .github-repo, .play-button, .paper-button {
-    font-size: 1.8em;
-  }
-
-  .download-cv {
-    font-size: 2.2em;
-  }
-
-  #Contact p {
-    font-size: 1em;
-  }
-
-  footer {
-    font-size: 0.9em;
-  }
-
 }
