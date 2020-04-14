@@ -26,8 +26,8 @@ function darkMode() {
   document.getElementById("email").classList.toggle("dark-mode-text");
   document.getElementById("email").classList.toggle("light-mode-text");
 
-  document.getElementById("main-outer").classList.toggle("dark-mode-alt");
-  document.getElementById("main-outer").classList.toggle("light-mode-alt");
+  document.getElementById("home").classList.toggle("dark-mode-alt");
+  document.getElementById("home").classList.toggle("light-mode-alt");
 
   document.getElementById("Publications").classList.toggle("dark-mode-alt");
   document.getElementById("Publications").classList.toggle("light-mode-alt");
@@ -49,7 +49,21 @@ function darkMode() {
       headers[i].children[j].classList.toggle("table-header-border-dark");
     }
   }
+}
 
+// Show dropdown menu for mobiles
+function openNav() {
+  document.getElementsByClassName("dropdown")[0].classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('#nav-button-text') & !event.target.matches("#menu-icon")) {
+    var element = document.getElementsByClassName("dropdown")[0];
+    if (element.classList.contains("show")) {
+      element.classList.remove("show");
+    }
+  }
 }
 
 </script>
@@ -60,9 +74,9 @@ function darkMode() {
 
 <div id="banner-outer" class="light-mode">
   <div id="banner">
-    <div id="banner-title"><p><a href="#main-outer">Jessica McFadyen</a></p></div>
+    <div id="banner-title"><p><a href="#home">Jessica McFadyen</a></p></div>
     <div id="banner-buttons">
-      <p class="banner-button"><a href="#main-outer">Home</a></p>
+      <p class="banner-button"><a href="#home">Home</a></p>
       <p class="banner-button"><a href="#About">About</a></p>
       <p class="banner-button"><a href="#Publications">Publications</a></p>
       <p class="banner-button"><a href="#Software">Software</a></p>
@@ -76,10 +90,24 @@ function darkMode() {
         <p id="dark-mode-text">Light</p>
       </div>
     </div>
+    <div id="nav-button-container">
+      <div id="nav-button-menu">
+        <button onclick="openNav()" class="dropdown-button" id="nav-button-text">Menu
+        <i class="fa fa-bars" aria-hidden="true" id="menu-icon"></i></button>
+      </div>
+      <div class="dropdown">
+        <p class="banner-button-mobile"><a href="#home">Home</a></p>
+        <p class="banner-button-mobile"><a href="#About">About</a></p>
+        <p class="banner-button-mobile"><a href="#Publications">Publications</a></p>
+        <p class="banner-button-mobile"><a href="#Software">Software</a></p>
+        <p class="banner-button-mobile"><a href="#CV">CV</a></p>
+        <p class="banner-button-mobile"><a href="#Contact">Contact</a></p>
+      </div>
+    </div>
   </div>
 </div>
 
-<section id="main-outer" class="light-mode-alt">
+<section id="home" class="light-mode-alt">
   <a name="Home"></a>
   <div id="main-inner">
     <div>
