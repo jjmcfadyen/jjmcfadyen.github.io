@@ -19,8 +19,8 @@ function darkMode() {
   document.getElementById("banner-outer").classList.toggle("dark-mode");
   document.getElementById("banner-outer").classList.toggle("light-mode");
 
-  document.getElementById("main-social-media-bar").classList.toggle("dark-mode");
-  document.getElementById("main-social-media-bar").classList.toggle("light-mode");
+  // document.getElementById("main-social-media-bar").classList.toggle("dark-mode");
+  // document.getElementById("main-social-media-bar").classList.toggle("light-mode");
 
   document.getElementById("contact-social-media-bar").classList.toggle("dark-mode");
   document.getElementById("contact-social-media-bar").classList.toggle("light-mode");
@@ -111,48 +111,50 @@ window.onclick = function(event) {
 
 <section id="home" class="light-mode-alt">
   <a name="Home"></a>
-  <div id="main-inner">
-    <div>
-      <h1>Cognitive neuroscientist</h1>
-      <h2>Research Fellow at University College London</h2>
-      <h3>Musician, gamer, developer</h3>
+  <div id="main-outer">
+    <div id="main-inner">
+      <div>
+        <h1>Cognitive neuroscientist</h1>
+        <h2>Research Fellow at University College London</h2>
+        <h3>Musician, gamer, developer</h3>
 
-      <div class="tooltip">
-        <p id="email" class="light-mode-text">j.mcfadyen@ucl.ac.uk</p>
-      </div>
+        <div class="tooltip">
+          <p id="email" class="light-mode-text">j.mcfadyen@ucl.ac.uk</p>
+        </div>
 
-      <div class="social-media-bar light-mode" id="main-social-media-bar">
-        <div class="tooltip" style="position:relative;">
-          <a href="https://twitter.com/jjmcfadyen" class="fa fa-twitter-square twitter-button"></a>
-          <span class="tooltiptext" style="top:3em; position:absolute;">Twitter</span>
-        </div>
-        <div class="tooltip" style="position:relative;">
-          <a href="https://github.com/jjmcfadyen/" class="fa fa-github-square github-button"></a>
-          <span class="tooltiptext" style="top:3em; position:absolute;">GitHub</span>
-        </div>
-        <div class="tooltip" style="position:relative;">
-          <a href="https://scholar.google.com.au/citations?user=KxPWaFgAAAAJ&hl=en&oi=ao" class="ai ai-google-scholar-square ai-2x google-scholar-button"></a>
-          <span class="tooltiptext" style="top:3em; position:absolute;">Google Scholar</span>
-        </div>
-        <div class="tooltip" style="position:relative;">
-          <a href="https://orcid.org/0000-0003-1415-2286" class="ai ai-orcid ai-2x orcid-button"></a>
-          <span class="tooltiptext" style="top:3em; position:absolute;">Orcid</span>
-        </div>
-        <div class="tooltip" style="position:relative;">
-          <a href="https://www.linkedin.com/in/jjmcfadyen/" class="fa fa-linkedin-square linkedin-button"></a>
-          <span class="tooltiptext" style="top:3em; position:absolute;">LinkedIn</span>
-        </div>
-        <div class="tooltip" style="position:relative;">
-          <a href="https://figshare.com/authors/Jessica_McFadyen/1660381" class="ai ai-figshare ai-2x figshare-button"></a>
-          <span class="tooltiptext" style="top:3em; position:absolute;">Figshare</span>
-        </div>
-        <div class="tooltip" style="position:relative;">
-          <a href="https://osf.io/ynzw2/" class="ai ai-osf ai-2x osf-button"></a>
-          <span class="tooltiptext" style="top:3em; position:absolute;">Open Science Framework</span>
+        <div class="social-media-bar light-mode" id="main-social-media-bar">
+          <div class="tooltip" style="position:relative;">
+            <a href="https://twitter.com/jjmcfadyen" class="fa fa-twitter-square twitter-button"></a>
+            <span class="tooltiptext" style="top:3em; position:absolute;">Twitter</span>
+          </div>
+          <div class="tooltip" style="position:relative;">
+            <a href="https://github.com/jjmcfadyen/" class="fa fa-github-square github-button"></a>
+            <span class="tooltiptext" style="top:3em; position:absolute;">GitHub</span>
+          </div>
+          <div class="tooltip" style="position:relative;">
+            <a href="https://scholar.google.com.au/citations?user=KxPWaFgAAAAJ&hl=en&oi=ao" class="ai ai-google-scholar-square ai-2x google-scholar-button"></a>
+            <span class="tooltiptext" style="top:3em; position:absolute;">Google Scholar</span>
+          </div>
+          <div class="tooltip" style="position:relative;">
+            <a href="https://orcid.org/0000-0003-1415-2286" class="ai ai-orcid ai-2x orcid-button"></a>
+            <span class="tooltiptext" style="top:3em; position:absolute;">Orcid</span>
+          </div>
+          <div class="tooltip" style="position:relative;">
+            <a href="https://www.linkedin.com/in/jjmcfadyen/" class="fa fa-linkedin-square linkedin-button"></a>
+            <span class="tooltiptext" style="top:3em; position:absolute;">LinkedIn</span>
+          </div>
+          <div class="tooltip" style="position:relative;">
+            <a href="https://figshare.com/authors/Jessica_McFadyen/1660381" class="ai ai-figshare ai-2x figshare-button"></a>
+            <span class="tooltiptext" style="top:3em; position:absolute;">Figshare</span>
+          </div>
+          <div class="tooltip" style="position:relative;">
+            <a href="https://osf.io/ynzw2/" class="ai ai-osf ai-2x osf-button"></a>
+            <span class="tooltiptext" style="top:3em; position:absolute;">Open Science Framework</span>
+          </div>
         </div>
       </div>
+      <div></div>
     </div>
-    <div></div>
   </div>
 </section>
 

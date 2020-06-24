@@ -183,8 +183,20 @@ input:checked + .slider:before {
   margin: 0;
 }
 
+#main-outer {
+  background-image: url("images/brain_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 #main-inner {
   width: 70%;
+  padding-top: 10em;
+  padding-bottom: 10em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -194,21 +206,21 @@ input:checked + .slider:before {
   font-size: 2.3em;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  color: #AE3CDE;
+  color: #F8F8F8;
 }
 
 #main-inner h2 {
   font-size: 1.5em;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
-  color: #E01199;
+  color: #EAEAEA;
 }
 
 #main-inner h3 {
   font-size: 1.2em;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
-  color: #DC1E00;
+  color: #EAEAEA;
 }
 
 #email {
@@ -216,6 +228,7 @@ input:checked + .slider:before {
   border: 0px;
   background: rgba(0,0,0,0);
   font-size: 1em;
+  color: #B24171;
 }
 
 .tooltip {
@@ -509,6 +522,12 @@ footer {
 
 @media screen and (max-width: 900px) {
 
+  html {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+  }
+
   #banner-outer {
     width: 100vw;
   }
@@ -516,17 +535,20 @@ footer {
     width: 90%;
   }
   #banner-title {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   .banner-button {
     display: none;
+  }
+  #banner-buttons {
+    padding: 0;
   }
   #dark-mode {
     display: none;
   }
   #nav-button-container{
     display: flex;
-    font-size: 1.3em;
+    font-size: 1em;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     float: left;
@@ -562,6 +584,9 @@ footer {
     padding: 0 0.7em 0 0.7em;
     display: none;
   }
+  .dropdown-button {
+    font-size: 0.8em;
+  }
   .banner-button-mobile {
     text-align: right;
     color: #FF0068;
@@ -572,6 +597,8 @@ footer {
 
   #main-inner {
     width: 90%;
+    padding-top: 5em;
+    padding-bottom: 5em;
   }
 
   #About div {
