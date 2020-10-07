@@ -197,9 +197,12 @@ input:checked + .slider:before {
   width: 70%;
   padding-top: 10em;
   padding-bottom: 10em;
+  padding-left: 2em;
+  padding-right: 2em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  background-color: rgba(0,0,0,.2);
 }
 
 #main-inner h1 {
@@ -212,8 +215,8 @@ input:checked + .slider:before {
 #main-inner h2 {
   font-size: 1.5em;
   font-family: 'Poppins', sans-serif;
-  font-weight: 300;
-  color: #EAEAEA;
+  font-weight: 400;
+  color: #E1B3FF;
 }
 
 #main-inner h3 {
@@ -228,7 +231,13 @@ input:checked + .slider:before {
   border: 0px;
   background: rgba(0,0,0,0);
   font-size: 1em;
-  color: #B24171;
+  color: #FF0068;
+}
+#email a {
+  color: #FFF;
+}
+#email a:hover {
+  color: #FFB65F;
 }
 
 .tooltip {
@@ -253,7 +262,7 @@ input:checked + .slider:before {
   padding: 0.5em;
   z-index: 1;
   opacity: 0;
-  transition: opacity 0.3s 1s;
+  transition: opacity 0.3s 0.5s;
 }
 
 .tooltip:hover .tooltiptext {
@@ -340,6 +349,15 @@ section {
 }
 #About a:hover {
   color: #FF9E00;
+}
+
+.worditout-word-cloud {
+  padding: 0 !important;
+}
+#about-cloud {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .inner-container {
