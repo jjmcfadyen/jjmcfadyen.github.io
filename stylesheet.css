@@ -91,7 +91,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  padding-right: 2em;
+  padding-right: 6em;
 }
 
 .banner-button {
@@ -173,57 +173,58 @@ input:checked + .slider:before {
 /* -------------------------- */
 /* MAIN PICTURE */
 /* -------------------------- */
+
+#wrapper {
+  position: absolute;
+  top: 6em;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
+
 #home {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 55em;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-#main-outer {
-  background-image: url("images/brain_bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-#main-inner {
   width: 70%;
-  padding-top: 10em;
-  padding-bottom: 10em;
-  padding-left: 2em;
-  padding-right: 2em;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background-color: rgba(0,0,0,.2);
+  flex-direction: row;
+  height: 70vh;
 }
 
-#main-inner h1 {
+#main-inner-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  /* background-color: rgba(0,0,0,.2);*/
+  width:50%;
+}
+
+#main-inner-right img {
+  height: 60vh;
+  padding: 2em;
+}
+
+#main-inner-left h1 {
   font-size: 2.3em;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  color: #F8F8F8;
+  /* color: #F8F8F8; */
 }
 
-#main-inner h2 {
+#main-inner-left h2 {
   font-size: 1.5em;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   color: #E1B3FF;
 }
 
-#main-inner h3 {
+#main-inner-left h3 {
   font-size: 1.2em;
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
-  color: #EAEAEA;
+  /* color: #EAEAEA;*/
+  color: #818181;
 }
 
 #email {
@@ -234,7 +235,7 @@ input:checked + .slider:before {
   color: #FF0068;
 }
 #email a {
-  color: #FFF;
+  color: #818181 ;
 }
 #email a:hover {
   color: #FFB65F;
@@ -415,6 +416,7 @@ section {
   border-collapse: collapse;
   border: 0px;
   margin-bottom: 3em;
+  width: 100%;
 }
 
 #Publications a {
@@ -538,17 +540,20 @@ footer {
   margin-bottom: 1em;
 }
 
+@media screen and (max-width: 1200px) {
+
+  #main-inner-right img {
+    height: 40vh;
+  }
+
+}
+
 @media screen and (max-width: 900px) {
 
-  html {
-    width: 80vw;
-    display: flex;
-    justify-content: center;
+  #wrapper {
+    margin-left: 1em;
   }
 
-  #banner-outer {
-    width: 100vw;
-  }
   #banner {
     width: 90%;
   }
@@ -571,7 +576,6 @@ footer {
     font-weight: 300;
     float: left;
     overflow: hidden;
-    width: 50vw;
   }
   .dropdown-button {
     font-size: 1em;
@@ -613,10 +617,19 @@ footer {
     display: block;
   }
 
-  #main-inner {
-    width: 90%;
-    padding-top: 5em;
-    padding-bottom: 5em;
+  #home {
+    flex-direction: column-reverse;
+    overflow: hidden;
+    height:100%;
+  }
+
+  #main-inner-left {
+    width: 100%;
+  }
+
+  #main-inner-right img {
+    height: 30em;
+    padding: 1em;
   }
 
   #About div {
