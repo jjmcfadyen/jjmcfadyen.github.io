@@ -4,13 +4,18 @@
 
 <title>Dr Jessica McFadyen</title>
 
-<meta name="description" content="Jessica is a cognitive neuroscientist working at University College London. She uses games to research how people make decisions when under threat.">
-<meta name="keywords" content="Jessica, McFadyen, jjmcfadyen, neuroscience, ucl, uq, qbi, scientist, psychology">
+<meta name="description" content="Jessica is a cognitive neuroscientist with a special interest in using video games to study fear and anxiety.">
+<meta name="keywords" content="Jessica, McFadyen, jjmcfadyen, alena, psychology, games, neuroscience, ucl, uq, qbi, scientist, psychology">
 <meta name="author" content="Jessica McFadyen">
 
 
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -26,475 +31,106 @@
   gtag('config', 'UA-74929755-1');
 </script>
 
-
-<script>
-
-function darkMode() {
-  /* Toggle colour scheme */
-  document.body.classList.toggle("dark-mode");
-
-  document.getElementById("banner-outer").classList.toggle("dark-mode");
-  document.getElementById("banner-outer").classList.toggle("light-mode");
-
-  document.getElementById("main-inner-left").classList.toggle("dark-mode-text");
-  document.getElementById("main-inner-left").classList.toggle("light-mode-text");
-
-  document.getElementById("contact-social-media-bar").classList.toggle("dark-mode");
-  document.getElementById("contact-social-media-bar").classList.toggle("light-mode");
-
-  document.getElementById("email").classList.toggle("dark-mode-text");
-  document.getElementById("email").classList.toggle("light-mode-text");
-
-  document.getElementById("home").classList.toggle("dark-mode-alt");
-  document.getElementById("home").classList.toggle("light-mode-alt");
-
-  document.getElementById("Publications").classList.toggle("dark-mode-alt");
-  document.getElementById("Publications").classList.toggle("light-mode-alt");
-
-  document.getElementById("CV").classList.toggle("dark-mode-alt");
-  document.getElementById("CV").classList.toggle("light-mode-alt");
-
-  /* Change button text */
-  if (document.body.classList.contains("dark-mode")) {
-    document.getElementById("dark-mode-text").innerHTML = 'dark';
-  } else {
-    document.getElementById("dark-mode-text").innerHTML = 'light';
-  }
-
-  var headers = document.getElementsByClassName("table-header");
-  for (let i = 0; i < headers.length; i++){
-    for (let j = 0; j < headers[i].children.length; j++) {
-      headers[i].children[j].classList.toggle("table-header-border-light");
-      headers[i].children[j].classList.toggle("table-header-border-dark");
-    }
-  }
-
-  document.getElementById("main-social-media-bar").classList.toggle("dark-mode");
-  document.getElementById("main-social-media-bar").classList.toggle("light-mode");
-
-}
-
-// Show dropdown menu for mobiles
-function openNav() {
-  document.getElementsByClassName("dropdown")[0].classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('#nav-button-text') & !event.target.matches("#menu-icon")) {
-    var element = document.getElementsByClassName("dropdown")[0];
-    if (element.classList.contains("show")) {
-      element.classList.remove("show");
-    }
-  }
-}
-
-</script>
-
 </head>
 
 <body>
 
-<div id="banner-outer" class="light-mode">
-  <div id="banner">
-    <div id="banner-title"><p><a href="#home">Jessica McFadyen</a></p></div>
-    <div id="banner-buttons">
-      <p class="banner-button"><a href="#home">Home</a></p>
-      <p class="banner-button"><a href="#About">About</a></p>
-      <p class="banner-button"><a href="#Publications">Publications</a></p>
-      <p class="banner-button"><a href="#Software">Software</a></p>
-      <p class="banner-button"><a href="#CV">CV</a></p>
-      <p class="banner-button"><a href="#Contact">Contact</a></p>
-      <div id="dark-mode">
-        <label class="switch">
-          <input type="checkbox" onclick="darkMode(this)">
-          <span class="slider"></span>
-        </label>
-        <p id="dark-mode-text">Light</p>
-      </div>
+<div id="header">
+  <div class="col">
+    <div class="row">
+      <h1>Jessica McFadyen</h1>
+      <p class="little-phd">PhD</p>
     </div>
-    <div id="nav-button-container">
-      <div id="nav-button-menu">
-        <button onclick="openNav()" class="dropdown-button" id="nav-button-text">Menu
-        <i class="fa fa-bars" aria-hidden="true" id="menu-icon"></i></button>
-      </div>
-      <div class="dropdown">
-        <p class="banner-button-mobile"><a href="#home">Home</a></p>
-        <p class="banner-button-mobile"><a href="#About">About</a></p>
-        <p class="banner-button-mobile"><a href="#Publications">Publications</a></p>
-        <p class="banner-button-mobile"><a href="#Software">Software</a></p>
-        <p class="banner-button-mobile"><a href="#CV">CV</a></p>
-        <p class="banner-button-mobile"><a href="#Contact">Contact</a></p>
-      </div>
+    <div class="row">
+      <p class="banner-link">
+        <a href="#about">about</a> / 
+        <a href="#cv">cv</a> / 
+        <a href="#contact">contact</a>
+      </p>
     </div>
   </div>
+  <img id="profile-circle" src="images/jess 3 square bw.jpg" alt="jessica-mcfadyen">
 </div>
 
-<div id="wrapper">
-  <section id="home" class="light-mode-alt">
-    <a name="Home"></a>
-      <div id="main-inner-left" class="light-mode-text">
-        <div>
-          <h1>Cognitive neuroscientist</h1>
-          <h2>Research Fellow at University College London</h2>
-          <h3>Using neuroimaging to map how we make decisions in the face of danger</h3>
-
-          <div class="tooltip">
-            <p id="email" class="light-mode-text"><a href="mailto:j.mcfadyen@ucl.ac.uk">j.mcfadyen@ucl.ac.uk</a></p>
-          </div>
-
-          <div class="social-media-bar light-mode" id="main-social-media-bar">
-            <div class="tooltip" style="position:relative;">
-              <a href="https://twitter.com/jjmcfadyen" class="fa fa-twitter-square twitter-button"></a>
-              <span class="tooltiptext" style="top:3em; position:absolute;">Twitter</span>
-            </div>
-            <div class="tooltip" style="position:relative;">
-              <a href="https://github.com/jjmcfadyen/" class="fa fa-github-square github-button"></a>
-              <span class="tooltiptext" style="top:3em; position:absolute;">GitHub</span>
-            </div>
-            <div class="tooltip" style="position:relative;">
-              <a href="https://scholar.google.com.au/citations?user=KxPWaFgAAAAJ&hl=en&oi=ao" class="ai ai-google-scholar-square ai-2x google-scholar-button"></a>
-              <span class="tooltiptext" style="top:3em; position:absolute;">Google Scholar</span>
-            </div>
-            <div class="tooltip" style="position:relative;">
-              <a href="https://orcid.org/0000-0003-1415-2286" class="ai ai-orcid ai-2x orcid-button"></a>
-              <span class="tooltiptext" style="top:3em; position:absolute;">Orcid</span>
-            </div>
-            <div class="tooltip" style="position:relative;">
-              <a href="https://www.linkedin.com/in/jjmcfadyen/" class="fa fa-linkedin-square linkedin-button"></a>
-              <span class="tooltiptext" style="top:3em; position:absolute;">LinkedIn</span>
-            </div>
-            <div class="tooltip" style="position:relative;">
-              <a href="https://figshare.com/authors/Jessica_McFadyen/1660381" class="ai ai-figshare ai-2x figshare-button"></a>
-              <span class="tooltiptext" style="top:3em; position:absolute;">Figshare</span>
-            </div>
-            <div class="tooltip" style="position:relative;">
-              <a href="https://osf.io/ynzw2/" class="ai ai-osf ai-2x osf-button"></a>
-              <span class="tooltiptext" style="top:3em; position:absolute;">Open Science Framework</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="main-inner-right">
-        <img src="images/jess 3 crop bw.jpg" alt="Jessica McFadyen">
-      </div>
-  </section>
-
-  <div class="content">
-  <section id="About">
-    <div class="inner-container" style="margin-bottom:3em;">
-      <h1>About</h1>
-      <hr style="width: 7em;">
-
-      <!--<div class="worditout-word-cloud"><svg id="about-cloud" viewBox="450 0 889 179"><rect style="fill: rgb(255, 255, 255);" width="100%" height="100%"></rect><text x="772" y="101.60" class="serif cz " style="fill: rgb(184, 0, 31); font-size: 44px;">neuroimaging</text><text x="856" y="132.20" class="serif cz " style="fill: rgb(107, 0, 45); font-size: 38px;">faces</text><text x="834" y="63.80" class="serif cz " style="fill: rgb(168, 0, 39); font-size: 22px;">psychiatry</text><text x="930" y="54.80" class="serif cz " style="fill: rgb(255, 146, 87); font-size: 32px;">human</text><text x="794" y="154.20" class="serif cz " style="fill: rgb(143, 0, 43); font-size: 38px;">fear</text><text x="900" y="156.30" class="serif cz " style="fill: rgb(255, 177, 117); font-size: 27px;">mri</text><text x="848" y="42.90" class="serif cz " style="fill: rgb(255, 155, 97); font-size: 21px;">mri</text><text x="940" y="136.20" class="serif cz " style="fill: rgb(214, 0, 14); font-size: 38px;">connectivity</text><text x="762" y="47.10" class="serif cz " style="fill: rgb(133, 0, 44); font-size: 19px;">amygdala</text><text x="1020" y="72.40" class="serif cz " style="fill: rgb(255, 56, 26); font-size: 36px;">decisions</text><text x="712" y="118.30" class="serif cz " style="fill: rgb(179, 0, 33); font-size: 27px;">tracts</text><text x="668" y="135.80" class="serif cz " style="fill: rgb(255, 137, 82); font-size: 22px;">choices</text><text x="666" y="87.60" class="serif cz " style="fill: rgb(255, 172, 112); font-size: 44px;">meg</text><text x="698" y="57.30" class="serif cz " style="fill: rgb(209, 0, 17); font-size: 17px;">pulvinar</text><text x="1134" y="130.90" class="serif cz " style="fill: rgb(255, 130, 77); font-size: 21px;">threat</text><text x="710" y="154.20" class="serif cz " style="fill: rgb(153, 0, 41); font-size: 18px;">psychology</text><text x="1040" y="36.20" class="serif cz " style="fill: rgb(153, 0, 41); font-size: 18px;">anxiety</text><text x="492" y="98.90" class="serif cz " style="fill: rgb(255, 17, 0); font-size: 41px;">modelling</text><text x="564" y="153.00" class="serif cz " style="fill: rgb(255, 64, 31); font-size: 30px;">colliculus</text><text x="1146" y="102.00" class="serif cz " style="fill: rgb(148, 0, 42); font-size: 40px;">diffusion</text><text x="1190" y="131.90" class="serif cz " style="fill: rgb(255, 143, 87); font-size: 31px;">behaviour</text><text x="656" y="37.40" class="serif cz " style="fill: rgb(255, 123, 71); font-size: 26px;">planning</text><text x="1180" y="65.70" class="serif cz " style="fill: rgb(189, 0, 31); font-size: 33px;">eeg</text></svg></div>-->
-
-      <p>Jessica is a cognitive neuroscientist investigating the brain networks that underlie how we perceive threats and make decisions. She is currently working as a postdoctoral research fellow at the Max Planck UCL Centre for Computational Psychiatry and Ageing Research in London, under the supervision of Professor Ray Dolan. Jessica uses a combination of computational modelling and magnetoencephalography (MEG) to determine how positive and negative scenarios are rapidly played out in the brain. She is interested in relating this to individual differences in trait anxiety.</p>
-
-      <p>Before moving to the UK, Jessica studied a Bachelor of Psychological Science at the University of Queensland, Australia. After being awarded Honours Class I, Jessica embarked on a PhD at the affiliated Queensland Brain Institute. Here, she was supervised by Associate Professor Marta Garrido and Professor Jason Mattingley. Jessica gained expertise in electroencephalography (EEG), MEG, fMRI, and diffusion MRI tractography analyses. She explored the anatomy and function of fast pathways to the amygdala that carry visual information about threats.</p>
-
-      <p>Jessica's academic <a href="#Publications">publications</a> can be found online. The data and analysis <a href="Software">code</a> from her first-authored experiments are also freely available. Jessica is passionate about using game-like experiments to study human behaviour, online and in the lab, and creates video games in her spare time. She is also an avid musician, which drives her curiosity about emotion in the brain.</p>
-
-    </div>
-  </section>
-
-  <section id="Publications" class="light-mode-alt">
-    <div class="inner-container">
-      <h1>Publications</h1>
-      <hr style="width: 7em;">
-
-      <div>
-        <h2>Papers</h2>
-
-        <table id="papers">
-          <tr class="table-header">
-            <th class="table-header-border-light">Authors</th>
-            <th class="table-header-border-light">Year</th>
-            <th class="table-header-border-light">Title</th>
-            <th class="table-header-border-light">Journal</th>
-            <th class="table-header-border-light">Link</th>
-          </tr>
-          <tr>
-            <th><strong>McFadyen, J.</strong>, Tsuchiya, N., Mattingley, J. B., & Garrido, M. I.</th>
-            <th>2022</th>
-            <th>Surprising threats accelerate conscious perception</th>
-            <th>Frontiers in Behavioral Neuroscience</th>
-            <th><a href="https://doi.org/10.3389%2Ffnbeh.2022.797119">Read here</a></th>
-          </tr>
-          <tr>
-            <th>Kalhan, S., <strong>McFadyen, J.</strong>, Tsuchiya, N., & Garrido, M. I.</th>
-            <th>2022</th>
-            <th>Neural and computational processes of accelerated perceptual awareness and decisions: A 7T fMRI study</th>
-            <th>Human Brain Mapping</th>
-            <th><a href="https://doi.org/10.1002/hbm.25889">Read here</a></th>
-          </tr>
-          <tr>
-            <th><strong>McFadyen, J.</strong>, Liu, Y., & Dolan, R. J.</th>
-            <th>2021</th>
-            <th>Differential replay for reward and punishment paths predicts approach and avoidance</th>
-            <th>bioRxiv</th>
-            <th><a href="https://doi.org/10.1101/2021.11.18.468950">Read here</a></th>
-          </tr>
-          <tr>
-            <th><strong>McFadyen, J.</strong>, Nolan, C., Pinocy, E., Buteri, D., & Baumann, O.</th>
-            <th>2021</th>
-            <th>Doorways do not always cause forgetting: A multimodal investigation</th>
-            <th>BMC Psychology</th>
-            <th><a href="https://doi.org/10.1186/s40359-021-00536-3">Read here</a></th>
-          </tr>
-          <tr>
-            <th>Baumann, O., <strong>McFadyen, J.</strong>, & Humphreys, M. S.</th>
-            <th>2020</th>
-            <th>Behavioral and neural effects of familiarization on object-background associations</th>
-            <th>Frontiers in Psychology</th>
-            <th><a href="https://doi.org/10.3389/fpsyg.2020.591231">Read here</a></th>
-          </tr>
-          <tr>
-            <th><strong>McFadyen, J.</strong>, Dolan, R. J., & Garrido, M. I.</th>
-            <th>2020</th>
-            <th>The influence of subcortical shortcuts on disordered sensory and cognitive processing</th>
-            <th>Nature Reviews Neuroscience</th>
-            <th><a href="https://doi.org/10.1038/s41583-020-0287-1">Read here</a></th>
-          </tr>
-          <tr>
-            <th>Baumann, O., Crawshaw, E., & <strong>McFadyen, J.</strong></th>
-            <th>2019</th>
-            <th>Survival of the fittest: Increased stimulus competition during encoding results in fewer but more robust memory traces</th>
-            <th>Frontiers in Psychology</th>
-            <th><a href="https://doi.org/10.3389/fpsyg.2019.00021">Read here</a></th>
-          </tr>
-          <tr>
-            <th><strong>McFadyen, J.</strong></th>
-            <th>2019</th>
-            <th>Investigating the Subcortical Route to the Amygdala Across Species and in Disordered Fear Responses</th>
-            <th>Journal of Experimental Neuroscience</th>
-            <th><a href="https://doi.org/10.1177/1179069519846445">Read here</a></th>
-          </tr>
-          <tr>
-            <th><strong>McFadyen, J.</strong>, Mattingley, J. B., & Garrido, M. I.</th>
-            <th>2019</th>
-            <th>An afferent white matter pathway from the pulvinar to the amygdala facilitates fear recognition</th>
-            <th>eLife</th>
-            <th><a href="https://doi.org/10.7554/eLife.40766">Read here</a></th>
-          </tr>
-          <tr>
-            <th>Baumann, O., Vromen, J. M. G., Cheung, A., <strong>McFadyen, J.</strong>, Ren, Y., & Guo, C. C.</th>
-            <th>2018</th>
-            <th>Neural correlates of temporal complexity and synchrony during audiovisual correspondence detection</th>
-            <th>eNeuro</th>
-            <th><a href="https://dx.doi.org/10.1523%2FENEURO.0294-17.2018">Read here</a></th>
-          </tr>
-          <tr>
-            <th><strong>McFadyen, J.</strong>, Mermillod, M., Mattingley, J. B., Halász, V., & Garrido, M. I.</th>
-            <th>2017</th>
-            <th>A rapid subcortical amygdala route for faces irrespective of spatial frequency and emotion</th>
-            <th>Journal of Neuroscience</th>
-            <th><a href="https://doi.org/10.1523/JNEUROSCI.3525-16.2017">Read here</a></th>
-          </tr>
-          <tr>
-            <th>Bret, A., Beffara, B., <strong>McFadyen, J.</strong>, & Mermillod, M.</th>
-            <th>2017</th>
-            <th>Right wing authoritarianism is associated with race bias in face detection</th>
-            <th>PloS One</th>
-            <th><a href="https://dx.doi.org/10.1371%2Fjournal.pone.0179894">Read here</a></th>
-          </tr>
-          <tr>
-            <th>Bednark, J. G., Ponnian, S. K., Palghat, K., <strong>McFadyen, J.</strong>, & Cunnington, R.</th>
-            <th>2015</th>
-            <th>Identity-specific predictions and implicit measures of agency</th>
-            <th>Psychology of Consciousness: Theory, Research, and Practice</th>
-            <th><a href="https://psycnet.apa.org/record/2015-40933-004">Read here</a></th>
-          </tr>
-          <tr>
-            <th>Cao, Y., Contreras-Huerta, L. S., <strong>McFadyen, J.</strong>, & Cunnington, R.</th>
-            <th>2015</th>
-            <th>Racial bias in neural response to others' pain is reduced with other-race contact</th>
-            <th>Cortex</th>
-            <th><a href="https://doi-org.ezproxy.library.uq.edu.au/10.1016/j.cortex.2015.02.010">Read here</a></th>
-          </tr>
-          <tr>
-            <th>Poonian, S. K, <strong>McFadyen, J.</strong>, Ogden, J., & Cunnington, R.</th>
-            <th>2015</th>
-            <th>Implicit agency in observed actions: evidence for N1 suppression of tones caused by self-made and observed actions</th>
-            <th>Journal of Cognitive Neuroscience</th>
-            <th><a href="https://doi.org/10.1162/jocn_a_00745">Read here</a></th>
-          </tr>
-        </table>
-      </div>
-
-      <div>
-        <h2>Public Engagement</h2>
-        <table id="public-engagement">
-          <tr class="table-header">
-            <th class="table-header-border-light">Authors</th>
-            <th class="table-header-border-light">Year</th>
-            <th class="table-header-border-light">Title</th>
-            <th class="table-header-border-light">Outlet</th>
-            <th class="table-header-border-light">Link</th>
-          </tr>
-          <tr>
-            <th>Baumann, O. & <strong>McFadyen, J.</strong></th>
-            <th>2021</th>
-            <th>It's not just doorways that make us forget what we came for in the next room</th>
-            <th>The Conversation</th>
-            <th><a href="https://theconversation.com/its-not-just-doorways-that-make-us-forget-what-we-came-for-in-the-next-room-156030">Read here</a></th>
-          </tr>
-        </table>
-      </div>
-
-      <div>
-        <h2>Theses</h2>
-        <table id="theses">
-          <tr class="table-header">
-            <th class="table-header-border-light">Authors</th>
-            <th class="table-header-border-light">Year</th>
-            <th class="table-header-border-light">Title</th>
-            <th class="table-header-border-light">Journal</th>
-            <th class="table-header-border-light">Link</th>
-          </tr>
-          <tr>
-            <th><strong>McFadyen, J.</strong></th>
-            <th>2019</th>
-            <th>Shortcuts for fear in hierarchical visual systems</th>
-            <th>University of Queensland (PhD Thesis)</th>
-            <th><a href="https://espace.library.uq.edu.au/view/UQ:5a049c7/s4231286_final_thesis.pdf?dsi_version=3d4b9fac80866f8e21fe2e9a06640997">Read here</a></th>
-          </tr>
-          <tr>
-            <th><strong>McFadyen, J.</strong></th>
-            <th>2014</th>
-            <th>The effects of caricatured faces on neural signatures of empathy</th>
-            <th>University of Queensland (Bachelor of Psychological Science, Honours I)</th>
-            <th><a href="https://espace.library.uq.edu.au/view/UQ:361119">Read here</a></th>
-          </tr>
-        </table>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="Software">
-    <div class="inner-container">
-      <h1>Software</h1>
-      <hr style="width: 7em;">
-
-      <h2>Experiments</h2>
-      <div id="experiment-code-table">
-        <div class="experiment-code-col">
-          <h3>Risk-Taking Game</h3>
-          <div class="img-container">
-            <img src="risk-experiment-img1.png" alt="Screenshot from risky decision making experiment">
-          </div>
-          <p>This repository contains the code used to run and analyse an experiment, currently in progress. In this experiment, participants memorised different sequences of images, each with their own point value. Participants then play a game where they must choose between a risky and safe option, aiming to maximise the number of points gained each time.</p>
-          <div>
-            <a href="https://github.com/jjmcfadyen/risky-replay" target="_blank" class="github-repo">GitHub Repository</a>
-            <a href="https://risky-decision-2019.firebaseapp.com/" target="_blank" class="play-button">Play Game</a>
-          </div>
-        </div>
-        <div class="experiment-code-col">
-          <h3>Conscious Perception Experiment</h3>
-          <div class="img-container">
-            <img src="bcfs-experiment-img1.png" alt="Experiment set-up for continuous flash suppression">
-          </div>
-          <p>This repository contains the code used to run and analyse an experiment, currently written up as a preprint. In this experiment, participants we used continuous flash suppression (a mirror technique that makes stimuli invisible) to see whether surprising neutral or surprising fearful faces broke into conscious perception faster.</p>
-          <div>
-            <a href="https://github.com/jjmcfadyen/surprising-threat-bcfs-eeg" target="_blank" class="github-repo">GitHub Repository</a>
-            <a href="https://doi.org/10.1101/525519" target="_blank" class="paper-button">Read Paper</a>
-          </div>
-        </div>
-        <div class="experiment-code-col">
-          <h3>Tractography Experiment</h3>
-          <div class="img-container">
-            <img src="diffusion-experiment-img1.png" alt="White matter tracts connecting the superior colliculus, pulvinar, and amygdala">
-          </div>
-          <p>This repository contains the code used to analyse data from the <a href="http://www.humanconnectomeproject.org/" target="_blank">Human Connectome Project</a>, the results of which were published in <i>eLife</i> in 2019. We reconstructed white matter tracts from the brainstem to the thalamus, and from the thalamus to the amygdala. We found that people with stronger fibre density along these tracts were better at recognising fearful faces and had stronger forward-flowing neural activity.</p>
-          <div>
-            <a href="https://github.com/jjmcfadyen/hcp-diffusion-dcm" target="_blank" class="github-repo">GitHub Repository</a>
-            <a href="https://doi.org/10.7554/eLife.40766" target="_blank" class="paper-button">Read Paper</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- <h2>Apps</h2>
-      <p style="text-align:left; margin-bottom: 5em;">Coming soon...</p>
-
-      <h2>Games</h2>
-      <p style="text-align:left; margin-bottom: 5em;">Coming soon...</p> -->
-
-    </div>
-  </section>
-
-  <section id="CV" class="light-mode-alt">
-    <div class="inner-container" style="display:flex; flex-direction:column; justify-content:center;">
-      <h1>Curriculum Vitae</h1>
-      <hr style="width: 7em;">
-
-      <a href="McFadyen_CV.pdf" class="download-cv" download target="_blank">Download CV as PDF</a>
-
-    </div>
-  </section>
-
-  <section id="Contact">
-    <div class="inner-container">
-
-      <h1>Contact</h1>
-      <hr style="width: 7em; margin-bottom:2em;">
-
-      <div class="tooltip">
-        <p id="email" style="text-align:center;">j.mcfadyen@ucl.ac.uk</p>
-      </div>
-
-      <div class="social-media-bar light-mode" style="justify-content:center; margin-bottom:2em;" id="contact-social-media-bar">
-        <div class="tooltip" style="position:relative;">
-          <a href="https://twitter.com/jjmcfadyen" class="fa fa-twitter-square twitter-button"></a>
-          <span class="tooltiptext" style="top:3em; position:absolute;">Twitter</span>
-        </div>
-        <div class="tooltip" style="position:relative;">
-          <a href="https://github.com/jjmcfadyen/" class="fa fa-github-square github-button"></a>
-          <span class="tooltiptext" style="top:3em; position:absolute;">GitHub</span>
-        </div>
-        <div class="tooltip" style="position:relative;">
-          <a href="https://scholar.google.com.au/citations?user=KxPWaFgAAAAJ&hl=en&oi=ao" class="ai ai-google-scholar-square ai-2x google-scholar-button"></a>
-          <span class="tooltiptext" style="top:3em; position:absolute;">Google Scholar</span>
-        </div>
-        <div class="tooltip" style="position:relative;">
-          <a href="https://orcid.org/0000-0003-1415-2286" class="ai ai-orcid ai-2x orcid-button"></a>
-          <span class="tooltiptext" style="top:3em; position:absolute;">Orcid</span>
-        </div>
-        <div class="tooltip" style="position:relative;">
-          <a href="https://www.linkedin.com/in/jjmcfadyen/" class="fa fa-linkedin-square linkedin-button"></a>
-          <span class="tooltiptext" style="top:3em; position:absolute;">LinkedIn</span>
-        </div>
-        <div class="tooltip" style="position:relative;">
-          <a href="https://figshare.com/authors/Jessica_McFadyen/1660381" class="ai ai-figshare ai-2x figshare-button"></a>
-          <span class="tooltiptext" style="top:3em; position:absolute;">Figshare</span>
-        </div>
-        <div class="tooltip" style="position:relative;">
-          <a href="https://osf.io/ynzw2/" class="ai ai-osf ai-2x osf-button"></a>
-          <span class="tooltiptext" style="top:3em; position:absolute;">Open Science Framework</span>
-        </div>
-      </div>
-
-      <div style="display:flex; justify-content:center; flex-direction:column; align-items:center; text-align:center;">
-        <p><strong>Max Planck UCL Centre for Computational Psychiatry<br>and Ageing Research</strong></p>
-        <p style="margin-top:-0.5em;">Russell Square House
-        <br>10-12 Russell Square
-        <br>London, WC1B 5EH
-        <br>United Kingdom</p>
-      </div>
-
-      <div style="display:flex; justify-content:center; flex-direction:column; align-items:center; text-align:center;">
-        <p><strong>Wellcome Centre for Human Neuroimaging</strong><br><i>Functional Neuroimaging Laboratory (FIL)</i></p>
-        <p style="margin-top:-0.5em;">UCL Queen Square Institute of Neurology
-        <br>University College London
-        <br>12 Queen Square
-        <br>London WC1N 3AR</p>
-      </div>
-
-    </div>
-  </section>
+<div id="banner">
+  <p>I'm a <strong>cognitive neuroscientist</strong> with a special interest in how <strong>video games</strong> can help us understand and improve 
+    <strong>mental health</strong>. You can find me at <a href="https://alena.com" target="_blank">Alena</a> developing mobile games to assess and treat social anxiety.
+  </p>
 </div>
-</body>
+
+<div id="about" class="section">
+  <hr>
+  <h2>About</h2>
+  <p>I have a Bachelors of Psychological Science (Hons I) and a <strong>PhD in cognitive neuroscience</strong> from the 
+    University of Queensland, Australia. In my PhD, I used brain imaging and computational modelling to study <strong>brain pathways that process emotional facial expressions</strong>. 
+    I then moved to the UK and worked as a <strong>research fellow at UCL</strong> (in the Max Planck UCL Centre for Computational Psychiatry and Ageing Research). 
+    There, I examined how people with higher anxiety decide whether to approach or avoid risky situations, and how future scenarios are rapidly played out in the brain.
+  </p>
+  <p>I'm now a cognitive scientist at <strong>Alena</strong>, where I develop and design mobile games to predict whether people with social anxiety will benefit from therapy. 
+    I strongly believe that <strong>the intersection of science and art will help solve the mental health crisis</strong>. Please <a href="#contact">contact me</a> if you would like to discuss 
+    how naturalistic and engaging environments (e.g., video games, music, and art) can enhance mental health research, as well as how <strong>neuroscience can enhance video games</strong>.
+  </p>
+</div>
+
+<div id="cv" class="section">
+  <hr>
+  <h2>CV</h2>
+  <p><a href="jessica-mcfadyen-cv.pdf" target="_blank">[ download ]</a></p>
+  <h3>Experience:</h3>
+  <ul>
+    <li>
+      <span class="span-year">&bullet; (2022 to present):</span><span class="span-content">Cognitive scientst at <i>Alena</i></span>
+    </li>
+    <li>
+      <span class="span-year">&bullet; (2019 to 2022):</span><span class="span-content">Research fellow at <i>University College London</i></span>
+    </li>
+    <li>
+      <span class="span-year">&bullet; (2015 to 2019):</span><span class="span-content">PhD at <i>The University of Queensland</i></span>
+    </li>
+    <li>
+      <span class="span-year">&bullet; (2011 to 2014):</span><span class="span-content">Bachelor of Psychological Science (Hons I) at <i>The University of Queensland</i></span>
+    </li>
+  </ul>
+  <h3>Skills</h3>
+  <ul>
+    <li>
+      <span class="span-skills">&bullet; Programming:</span><span class="span-content">Javascript, React, MATLAB, R, HTML, CSS</span>
+    </li>
+    <li>
+      <span class="span-skills">&bullet; Experimental design:</span><span class="span-content">Psychology, neuroscience (M/EEG, MRI), user research</span>
+    </li>
+    <li>
+      <span class="span-skills">&bullet; Game design:</span><span class="span-content">PC, mobile - puzzle, action, strategy, simulation</span>
+    </li>
+    <li>
+      <span class="span-skills">&bullet; Computational modelling:</span><span class="span-content">Dynamic causal modelling, reinforcement learning, custom model construction</span>
+    </li>
+    <li>
+      <span class="span-skills">&bullet; Statistics:</span><span class="span-content">Machine learning, frequentist methods, Bayesian methods, mixed effects modelling</span>
+    </li>
+    <li>
+      <span class="span-skills">&bullet; Communication:</span><span class="span-content">Writing, public speaking</span>
+    </li>
+    <li>
+      <span class="span-skills">&bullet; Psychology:</span><span class="span-content">Anxiety, empathy, memory, cognitive behavioural therapy (CBT), visual perception</span>
+    </li>
+  </ul>
+</div>
+
+<div id="contact" class="section">
+  <hr>
+  <h2>Contact</h2>
+  <div class="row"><i class="icon fa fa-envelope" aria-hidden="true"></i><p>drjessicajean (at) gmail (dot) com</p></div>
+  <div class="row"><i class="icon fa fa-twitter" aria-hidden="true"></i><a href="https://twitter.com/jjmcfadyen" target="_blank">@jjmcfadyen</a></div>
+  <div class="row"><i class="icon fa fa-github" aria-hidden="true"></i><a href="https://github.com/jjmcfadyen" target="_blank">jjmcfadyen</a></div>
+  <div class="row"><i class="icon ai ai-google-scholar" aria-hidden="true"></i><a href="https://scholar.google.com.au/citations?user=KxPWaFgAAAAJ&hl=en&oi=ao" target="_blank">google scholar</a></div>
+  <div class="row"><i class="icon ai ai-orcid" aria-hidden="true"></i><a href="https://orcid.org/0000-0003-1415-2286" target="_blank">orcid</a></div>
+  <div class="row"><i class="icon ai ai-osf" aria-hidden="true"></i><a href="https://osf.io/ynzw2/" target="_blank">OSF</a></div>
+</div>
+
 
 <footer>
+  <hr>
   <p>&copy; Jessica McFadyen, 2022</p>
 </footer>
 
